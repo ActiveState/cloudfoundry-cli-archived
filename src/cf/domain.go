@@ -3,6 +3,7 @@ package cf
 import (
 	"fmt"
 	"time"
+	"cf"
 )
 
 type InstanceState string
@@ -26,6 +27,7 @@ type Space struct {
 	Guid             string
 	Applications     []Application
 	ServiceInstances []ServiceInstance
+	Organization	cf.Organization
 }
 
 type Application struct {
